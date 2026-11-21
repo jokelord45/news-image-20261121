@@ -35,5 +35,5 @@ nations.
 `main.py` is the entrypoint: it copies `entry.png` (JPEG, 768x1024,
 about 170 KB) into `$MAKEFUN_OUTPUT_DIR` (default `/output`), checks
 the copy byte for byte against the source, and refuses anything that
-is not a complete JPEG under the 1 MiB cap. Running it twice writes
-identical bytes.
+is not a complete JPEG under the 1 MiB cap or over 1024x1024 pixels.
+Running it twice writes identical bytes.
